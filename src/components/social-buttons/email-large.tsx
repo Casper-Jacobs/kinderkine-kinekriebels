@@ -4,9 +4,9 @@ export const EmailLarge = () => {
 	return (
 		<span className="flex flex-row gap-2 items-center">
 			<Email />
-			<span className="font-bold">jole.cops@telenet.be</span>
+			<span className="font-bold">temp</span>
 			<button
-				onClick={() => navigator.clipboard.writeText('jole.cops@telenet.be')}
+				onClick={() => navigator.clipboard.writeText('temp')}
 				className="hover:cursor-pointer hover:drop-shadow-lg hover:text-stone-500 ms-2"
 			>
 				<svg

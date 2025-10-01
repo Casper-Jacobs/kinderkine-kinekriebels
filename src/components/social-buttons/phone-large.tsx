@@ -4,9 +4,9 @@ export const PhoneLarge = () => {
 	return (
 		<span className="flex flex-row gap-2 items-center">
 			<Phone />
-			<span className="font-bold mb-1 text-nowrap">+32 495 79 76 50</span>
+			<span className="font-bold mb-1 text-nowrap">temp</span>
 			<button
-				onClick={() => navigator.clipboard.writeText('+32 495 79 76 50')}
+				onClick={() => navigator.clipboard.writeText('temp')}
 				className="hover:cursor-pointer hover:drop-shadow-lg hover:text-stone-500 ms-2"
 			>
 				<svg

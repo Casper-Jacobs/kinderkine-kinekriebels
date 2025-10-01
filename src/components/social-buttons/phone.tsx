@@ -15,7 +15,7 @@ export const Phone = () => {
 	)
 	return (
 		<a
-			href="tel:+32495797650"
+			href="tel:temp"
 			target="_blank"
 			className="relative inline-block hover:drop-shadow-lg hover:cursor-pointer"
 		>

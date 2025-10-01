@@ -16,7 +16,7 @@ export const Email = () => {
 	)
 	return (
 		<a
-			href="mailto:Jole.cops@telenet.be"
+			href="mailto:temp"
 			target="_blank"
 			className="relative inline-block hover:drop-shadow-lg hover:cursor-pointer"
 		>

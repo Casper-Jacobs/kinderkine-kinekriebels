@@ -41,7 +41,7 @@ export const Whatsapp = () => {
 	)
 	return (
 		<a
-			href="https://wa.me/+32495797650"
+			href="https://wa.me/temp"
 			target="_blank"
 			className="relative inline-block hover:drop-shadow-lg hover:cursor-pointer"
 		>

@@ -13,7 +13,7 @@ export const Instagram = () => {
 	)
 	return (
 		<a
-			href="https://www.instagram.com/TODO"
+			href="temp"
 			target="_blank"
 			className="relative inline-block hover:drop-shadow-lg hover:cursor-pointer"
 		>
