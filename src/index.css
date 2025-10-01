@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFFFFF;
+  --color-secondary: #212121;
+  --color-tertiary: #3C3C3C;
+  --font-lato: "Lato", sans-serif;
+}
+
+.bordered-text {
+  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+}
+
+.bottom-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.top-shadow {
+  box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.4), 0 -4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: calc(var(--spacing) * 0);
+    z-index: 999;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+    background-color: color-mix(in oklab, var(--color-black) /* #000 = #000000 */ 60%, transparent);
+
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function) /* cubic-bezier(0.4, 0, 0.2, 1) */);
+    transition-duration: var(--tw-duration, var(--default-transition-duration) /* 150ms */);
+
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+.modal-default {
+    position: relative;
+    z-index: 999;
+    min-width: 40%;
+    border-radius: var(--radius-lg);
+    background-color: var(--color-white);
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
