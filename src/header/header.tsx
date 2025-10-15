@@ -12,7 +12,6 @@ export const Header = (props: HeaderProps) => {
 	const breakpoints = useBreakpoints();
 	const [shrunk, setShrunk] = useState(false);
 	const [sideNavVisible, setSideNavVisible] = useState<boolean>(false);
-	const [navigationVisible, setNavigationVisible] = useState<boolean>(false);
 
 	const headerRef = useRef<HTMLDivElement | null>(null)
 
