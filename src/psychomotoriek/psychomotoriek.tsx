@@ -7,15 +7,18 @@ export const Psychomotoriek = () => {
 					<div className="flex items-start gap-4">
 						<span className="icon-badge">🧠</span>
 						<div>
-							<h1 className="font-bold text-3xl text-gray-900">Psychomotoriek bij KineKriebels</h1>
+							<h1 className="font-bold text-3xl text-gray-900">
+								Psychomotoriek bij KineKriebels
+							</h1>
 							<p className="italic text-lg text-gray-600 mt-2">
-								Bewegen, ontdekken en groeien – stap voor stap, in het ritme van elk kind.
+								Bewegen, ontdekken en groeien – stap voor stap, in het ritme van elk
+								kind.
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div className="card animate-fadeInUp" style={{animationDelay: '0.1s'}}>
+				<div className="card animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
 					<p className="text-lg leading-relaxed text-gray-700">
 						Psychomotoriek is de verbinding tussen denken, voelen en bewegen. Sommige
 						kinderen hebben wat extra ondersteuning nodig in hun ontwikkeling. Bij
@@ -23,60 +26,83 @@ export const Psychomotoriek = () => {
 						beweging en plezier – op maat van jouw kind.
 					</p>
 					<p className="text-lg leading-relaxed mt-4 font-semibold text-gray-900">
-						In mijn therapie werk ik aan verschillende domeinen die belangrijk zijn voor het
-						dagelijks functioneren op school én thuis:
+						In mijn therapie werk ik aan verschillende domeinen die belangrijk zijn voor
+						het dagelijks functioneren op school én thuis:
 					</p>
 				</div>
 
-				<div className="card border-l-4 border-pink-600 animate-fadeInUp" style={{animationDelay: '0.2s'}}>
+				<div
+					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					style={{ animationDelay: '0.2s' }}
+				>
 					<div className="flex items-start gap-4 mb-4">
 						<span className="text-4xl">✍️</span>
-						<h2 className="font-bold text-2xl text-gray-900">Fijne motoriek & schrijven</h2>
+						<h2 className="font-bold text-2xl text-gray-900">
+							Fijne motoriek & schrijven
+						</h2>
 					</div>
 					<div className="bg-gray-50 rounded-lg p-4 mb-3">
 						<p className="font-semibold mb-2 text-gray-700">Herken je dit?</p>
 						<ul className="space-y-2">
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Moeite met knippen, tekenen, kleuren of schrijven?</span>
+								<span className="text-gray-700">
+									Moeite met knippen, tekenen, kleuren of schrijven?
+								</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Onrijpe pengreep, te veel spanning of traag tempo?</span>
+								<span className="text-gray-700">
+									Onrijpe pengreep, te veel spanning of traag tempo?
+								</span>
 							</li>
 						</ul>
 					</div>
 					<p className="leading-relaxed text-gray-700">
-						<span className="font-bold text-gray-900">Samen oefenen we</span> schrijfmotoriek, pengreep en fijne handvaardigheden via leuke,
+						<span className="font-bold text-gray-900">Samen oefenen we</span>{' '}
+						schrijfmotoriek, pengreep en fijne handvaardigheden via leuke,
 						kindvriendelijke spelletjes en technieken.
 					</p>
 				</div>
 
-				<div className="card border-l-4 border-pink-600 animate-fadeInUp" style={{animationDelay: '0.3s'}}>
+				<div
+					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					style={{ animationDelay: '0.3s' }}
+				>
 					<div className="flex items-start gap-4 mb-4">
 						<span className="text-4xl">🦶</span>
-						<h2 className="font-bold text-2xl text-gray-900">Grove motoriek & coördinatie</h2>
+						<h2 className="font-bold text-2xl text-gray-900">
+							Grove motoriek & coördinatie
+						</h2>
 					</div>
 					<div className="bg-gray-50 rounded-lg p-4 mb-3">
 						<p className="font-semibold mb-2 text-gray-700">Herken je dit?</p>
 						<ul className="space-y-2">
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Moeite met springen, lopen, evenwicht of balvaardigheden?</span>
+								<span className="text-gray-700">
+									Moeite met springen, lopen, evenwicht of balvaardigheden?
+								</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Lijkt je kind "onhandig" of struikelt het vaak?</span>
+								<span className="text-gray-700">
+									Lijkt je kind "onhandig" of struikelt het vaak?
+								</span>
 							</li>
 						</ul>
 					</div>
 					<p className="leading-relaxed text-gray-700">
-						<span className="font-bold text-gray-900">We bouwen zelfvertrouwen op</span> via speelse oefeningen die grote bewegingen, balans
-						en lichaamscontrole stimuleren.
+						<span className="font-bold text-gray-900">We bouwen zelfvertrouwen op</span>{' '}
+						via speelse oefeningen die grote bewegingen, balans en lichaamscontrole
+						stimuleren.
 					</p>
 				</div>
 
-				<div className="card border-l-4 border-pink-600 animate-fadeInUp" style={{animationDelay: '0.4s'}}>
+				<div
+					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					style={{ animationDelay: '0.4s' }}
+				>
 					<div className="flex items-start gap-4 mb-4">
 						<span className="text-4xl">🧭</span>
 						<h2 className="font-bold text-2xl text-gray-900">Ruimtelijke oriëntatie</h2>
@@ -86,73 +112,104 @@ export const Psychomotoriek = () => {
 						<ul className="space-y-2">
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Problemen met links/rechts, richtingen of plaatsbepaling?</span>
+								<span className="text-gray-700">
+									Problemen met links/rechts, richtingen of plaatsbepaling?
+								</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Moeite met puzzelen, overschrijven of plannen?</span>
+								<span className="text-gray-700">
+									Moeite met puzzelen, overschrijven of plannen?
+								</span>
 							</li>
 						</ul>
 					</div>
 					<p className="leading-relaxed text-gray-700">
-						<span className="font-bold text-gray-900">We oefenen oriëntatie</span> in de ruimte en op papier, zodat je kind zich beter kan
-						organiseren en positioneren.
+						<span className="font-bold text-gray-900">We oefenen oriëntatie</span> in de
+						ruimte en op papier, zodat je kind zich beter kan organiseren en
+						positioneren.
 					</p>
 				</div>
 
-				<div className="card border-l-4 border-pink-600 animate-fadeInUp" style={{animationDelay: '0.5s'}}>
+				<div
+					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					style={{ animationDelay: '0.5s' }}
+				>
 					<div className="flex items-start gap-4 mb-4">
 						<span className="text-4xl">🧠</span>
-						<h2 className="font-bold text-2xl text-gray-900">Executieve functies: aandacht & concentratie</h2>
+						<h2 className="font-bold text-2xl text-gray-900">
+							Executieve functies: aandacht & concentratie
+						</h2>
 					</div>
 					<div className="bg-gray-50 rounded-lg p-4 mb-3">
 						<p className="font-semibold mb-2 text-gray-700">Herken je dit?</p>
 						<ul className="space-y-2">
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Snel afgeleid, moeite met starten of opdrachten afwerken?</span>
+								<span className="text-gray-700">
+									Snel afgeleid, moeite met starten of opdrachten afwerken?
+								</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Problemen met werkhouding of het opvolgen van stappen?</span>
+								<span className="text-gray-700">
+									Problemen met werkhouding of het opvolgen van stappen?
+								</span>
 							</li>
 						</ul>
 					</div>
 					<p className="leading-relaxed text-gray-700">
-						<span className="font-bold text-gray-900">Via beweging, spel en structuur</span> versterken we het werkgeheugen, de aandacht en
-						het doorzettingsvermogen.
+						<span className="font-bold text-gray-900">
+							Via beweging, spel en structuur
+						</span>{' '}
+						versterken we het werkgeheugen, de aandacht en het doorzettingsvermogen.
 					</p>
 				</div>
 
-				<div className="card border-l-4 border-pink-600 animate-fadeInUp" style={{animationDelay: '0.6s'}}>
+				<div
+					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					style={{ animationDelay: '0.6s' }}
+				>
 					<div className="flex items-start gap-4 mb-4">
 						<span className="text-4xl">🔁</span>
-						<h2 className="font-bold text-2xl text-gray-900">Lateralisatie & lichaamsbesef</h2>
+						<h2 className="font-bold text-2xl text-gray-900">
+							Lateralisatie & lichaamsbesef
+						</h2>
 					</div>
 					<div className="bg-gray-50 rounded-lg p-4 mb-3">
 						<p className="font-semibold mb-2 text-gray-700">Herken je dit?</p>
 						<ul className="space-y-2">
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Verwarring tussen links en rechts?</span>
+								<span className="text-gray-700">
+									Verwarring tussen links en rechts?
+								</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<span className="text-pink-600 mt-1">•</span>
-								<span className="text-gray-700">Moeite met het kennen en gebruiken van het eigen lichaam?</span>
+								<span className="text-gray-700">
+									Moeite met het kennen en gebruiken van het eigen lichaam?
+								</span>
 							</li>
 						</ul>
 					</div>
 					<p className="leading-relaxed text-gray-700">
-						<span className="font-bold text-gray-900">We ondersteunen</span> een goede lichaamsoriëntatie en linker-rechterontwikkeling, wat
-						essentieel is voor motorische én cognitieve groei.
+						<span className="font-bold text-gray-900">We ondersteunen</span> een goede
+						lichaamsoriëntatie en linker-rechterontwikkeling, wat essentieel is voor
+						motorische én cognitieve groei.
 					</p>
 				</div>
 
-				<div className="card text-center bg-pink-600! text-white animate-fadeInUp" style={{animationDelay: '0.7s'}}>
-					<p className="text-xl font-semibold mb-2">Elk kind is anders – dus werk ik steeds individueel en op maat</p>
+				<div
+					className="card text-center bg-pink-600! text-white animate-fadeInUp"
+					style={{ animationDelay: '0.7s' }}
+				>
+					<p className="text-xl font-semibold mb-2">
+						Elk kind is anders – dus werk ik steeds individueel en op maat
+					</p>
 					<p className="text-lg">
-						met ruimte voor plezier, succeservaringen en kleine overwinningen. Therapie voelt hier
-						nooit als "moeten", maar als ontdekken wat je wél kan!
+						met ruimte voor plezier, succeservaringen en kleine overwinningen. Therapie
+						voelt hier nooit als "moeten", maar als ontdekken wat je wél kan!
 					</p>
 				</div>
 			</div>

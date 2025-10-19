@@ -66,11 +66,14 @@ export const Praktisch = () => {
 						</div>
 						<div className="space-y-2 text-lg text-gray-700">
 							<p>
-								<span className="font-semibold text-gray-900">Dinsdag & donderdag:</span>{' '}
+								<span className="font-semibold text-gray-900">
+									Dinsdag & donderdag:
+								</span>{' '}
 								16u30-19u
 							</p>
 							<p>
-								<span className="font-semibold text-gray-900">Zaterdag:</span> 9u-12u
+								<span className="font-semibold text-gray-900">Zaterdag:</span>{' '}
+								9u-12u
 							</p>
 						</div>
 					</div>

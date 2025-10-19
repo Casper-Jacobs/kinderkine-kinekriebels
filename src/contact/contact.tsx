@@ -58,7 +58,9 @@ export const Contact = () => {
 							<span className="text-4xl">📧</span>
 							<div>
 								<p className="font-bold text-gray-900">E-mail</p>
-								<p className="text-sm text-gray-700">myrthe.kinekriebels@gmail.com</p>
+								<p className="text-sm text-gray-700">
+									myrthe.kinekriebels@gmail.com
+								</p>
 							</div>
 						</div>
 						<div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border border-gray-100">

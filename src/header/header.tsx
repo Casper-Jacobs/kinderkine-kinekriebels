@@ -50,7 +50,9 @@ export const Header = (props: HeaderProps) => {
 							</span>
 						)}
 
-						<h1 className={`text-xl font-bold transition-all duration-300 ${shrunk ? 'text-secondary' : 'text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'}`}>
+						<h1
+							className={`text-xl font-bold transition-all duration-300 ${shrunk ? 'text-secondary' : 'text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'}`}
+						>
 							Kinderkine KineKriebels
 						</h1>
 					</span>

@@ -37,7 +37,9 @@ export const Home = () => {
 				<div className="card animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
 					<p className="text-lg leading-relaxed text-gray-700">
 						Als gespecialiseerde kinesitherapeut in{' '}
-						<span className="font-semibold text-gray-900">psychomotoriek bij kinderen</span>
+						<span className="font-semibold text-gray-900">
+							psychomotoriek bij kinderen
+						</span>
 						, bied ik begeleiding op maat, afgestemd op de noden van jouw kind. Dat doen
 						we op een speelse, positieve en veilige manier – met kriebels voor beweging,
 						spel en groei!
@@ -62,7 +64,9 @@ export const Home = () => {
 						</div>
 						<div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
 							<span className="text-2xl">🌟</span>
-							<p className="text-gray-700">Ruimte voor plezier, succeservaringen en zelfvertrouwen</p>
+							<p className="text-gray-700">
+								Ruimte voor plezier, succeservaringen en zelfvertrouwen
+							</p>
 						</div>
 						<div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
 							<span className="text-2xl">💬</span>

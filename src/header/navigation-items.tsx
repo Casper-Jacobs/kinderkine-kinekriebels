@@ -8,7 +8,7 @@ interface NavigationItemsProps {
 export const NavigationItems = (props: NavigationItemsProps) => {
 	const defaultColor = props.shrunk ? 'text-secondary' : 'text-white'
 	const color = props.color ?? defaultColor
-	
+
 	return (
 		<div
 			className={`flex ${props.orientation === 'vertical' ? 'flex-col justify-center items-start' : 'flex-row justify-center items-center'} gap-6`}
