@@ -18,7 +18,15 @@ export const HeaderItem = (props: HeaderItemProps) => {
 				if (props.onClick) props.onClick()
 				else if (props.link) navigate(props.link)
 			}}
-			className={`text-nowrap text-md ${highlighted ? 'opacity-100' : 'opacity-70'} ${props.color ?? 'text-secondary'} hover:drop-shadow-lg hover:cursor-pointer hover:opacity-100 transition-all duration-200 ease-in-out`}
+			className={`
+				relative text-nowrap text-md font-semibold
+				${highlighted ? 'opacity-100' : 'opacity-80'} 
+				${props.color ?? 'text-secondary'} 
+				hover:cursor-pointer hover:opacity-100 
+				transition-all duration-300 ease-in-out
+				${highlighted ? 'after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:rounded-full' : ''}
+				hover:scale-105
+			`}
 		>
 			{props.text}
 		</a>

@@ -5,7 +5,83 @@
   --color-primary: #FFFFFF;
   --color-secondary: #212121;
   --color-tertiary: #3C3C3C;
+  --color-accent: #FF6B9D;
+  --color-accent-light: #FFE5EE;
+  --color-success: #4CAF50;
+  --color-info: #2196F3;
+  --color-warning: #FFC107;
   --font-lato: "Lato", sans-serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-bounce-slow {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
 }
 
 .bordered-text {
@@ -18,6 +94,44 @@
 
 .top-shadow {
   box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.4), 0 -4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+}
+
+.card-accent {
+  background: linear-gradient(135deg, #FFE5EE 0%, #FFF0F5 100%);
+  border-left: 4px solid #FF6B9D;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF6B9D 0%, #FF8FAB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B9D 0%, #FF8FAB 100%);
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(255, 107, 157, 0.3);
 }
 
 .modal-backdrop {
