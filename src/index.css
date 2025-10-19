@@ -128,6 +128,9 @@
   justify-content: center;
   width: 48px;
   height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  flex-shrink: 0;
   border-radius: 50%;
   background: linear-gradient(135deg, #E91E63 0%, #EC407A 100%);
   color: white;
