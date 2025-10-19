@@ -5,8 +5,9 @@
   --color-primary: #FFFFFF;
   --color-secondary: #212121;
   --color-tertiary: #3C3C3C;
-  --color-accent: #FF6B9D;
-  --color-accent-light: #FFE5EE;
+  --color-accent: #E91E63;
+  --color-accent-light: #FCE4EC;
+  --color-accent-dark: #C2185B;
   --color-success: #4CAF50;
   --color-info: #2196F3;
   --color-warning: #FFC107;
@@ -110,12 +111,12 @@
 }
 
 .card-accent {
-  background: linear-gradient(135deg, #FFE5EE 0%, #FFF0F5 100%);
-  border-left: 4px solid #FF6B9D;
+  background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD0 100%);
+  border-left: 4px solid #E91E63;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #FF6B9D 0%, #FF8FAB 100%);
+  background: linear-gradient(135deg, #E91E63 0%, #EC407A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,10 +129,10 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #FF6B9D 0%, #FF8FAB 100%);
+  background: linear-gradient(135deg, #E91E63 0%, #EC407A 100%);
   color: white;
   font-size: 24px;
-  box-shadow: 0 4px 6px rgba(255, 107, 157, 0.3);
+  box-shadow: 0 2px 4px rgba(233, 30, 99, 0.2);
 }
 
 .modal-backdrop {
