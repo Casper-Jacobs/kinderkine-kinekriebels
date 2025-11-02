@@ -1,41 +1,43 @@
 export const Psychomotoriek = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
-			<div className="bg-[url(/src/assets/psy-top-bg.png)] bg-no-repeat bg-top bg-fixed h-[25vh] w-screen" />
-			<div className="flex flex-col gap-6 w-full md:w-2/3 p-4 md:p-8">
-				<div className="card card-accent animate-fadeInUp">
-					<div className="flex items-start gap-4">
-						<span className="icon-badge">🧠</span>
-						<div>
-							<h1 className="font-bold text-3xl text-gray-900">
-								Psychomotoriek bij KineKriebels
-							</h1>
-							<p className="italic text-lg text-gray-600 mt-2">
-								Bewegen, ontdekken en groeien – stap voor stap, in het ritme van elk
-								kind.
-							</p>
-						</div>
-					</div>
+			<div className="w-full pt-20">
+				<img 
+					src="/src/assets/psy-top-bg.png" 
+					className="w-full h-auto object-cover"
+					alt="Background"
+				/>
+			</div>
+		<div className="flex flex-col gap-16 w-full md:w-2/3 p-4 md:p-8 py-12">
+			<div className="animate-fadeInUp max-w-3xl">
+				<div className="flex items-center gap-4 mb-6">
+					<span className="icon-badge">🧠</span>
+					<h1 className="font-bold text-4xl md:text-5xl text-gray-900">
+						Psychomotoriek bij KineKriebels
+					</h1>
 				</div>
+				<p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+					Bewegen, ontdekken en groeien – stap voor stap, in het ritme van elk
+					kind.
+				</p>
+			</div>
 
-				<div className="card animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-					<p className="text-lg leading-relaxed text-gray-700">
-						Psychomotoriek is de verbinding tussen denken, voelen en bewegen. Sommige
-						kinderen hebben wat extra ondersteuning nodig in hun ontwikkeling. Bij
-						KineKriebels bied ik psychomotorische therapie aan die vertrekt vanuit spel,
-						beweging en plezier – op maat van jouw kind.
-					</p>
-					<p className="text-lg leading-relaxed mt-4 font-semibold text-gray-900">
-						In mijn therapie werk ik aan verschillende domeinen die belangrijk zijn voor
-						het dagelijks functioneren op school én thuis:
-					</p>
-				</div>
-
-				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+			<div className="animate-fadeInUp space-y-6" style={{ animationDelay: '0.1s' }}>
+				<p className="text-lg md:text-xl leading-relaxed text-gray-700">
+					Psychomotoriek is de verbinding tussen denken, voelen en bewegen. Sommige
+					kinderen hebben wat extra ondersteuning nodig in hun ontwikkeling. Bij
+					KineKriebels bied ik psychomotorische therapie aan die vertrekt vanuit spel,
+					beweging en plezier – op maat van jouw kind.
+				</p>
+				<p className="text-lg md:text-xl leading-relaxed font-semibold text-gray-900">
+					In mijn therapie werk ik aan verschillende domeinen die belangrijk zijn voor
+					het dagelijks functioneren op school én thuis:
+				</p>
+			</div>				<div
+					className="animate-fadeInUp"
 					style={{ animationDelay: '0.2s' }}
 				>
-					<div className="flex items-start gap-4 mb-4">
+					<div className="flex items-center gap-4 mb-6">
 						<span className="text-4xl">✍️</span>
 						<h2 className="font-bold text-2xl text-gray-900">
 							Fijne motoriek & schrijven
@@ -66,10 +68,10 @@ export const Psychomotoriek = () => {
 				</div>
 
 				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					className="animate-fadeInUp"
 					style={{ animationDelay: '0.3s' }}
 				>
-					<div className="flex items-start gap-4 mb-4">
+					<div className="flex items-center gap-4 mb-6">
 						<span className="text-4xl">🦶</span>
 						<h2 className="font-bold text-2xl text-gray-900">
 							Grove motoriek & coördinatie
@@ -100,10 +102,10 @@ export const Psychomotoriek = () => {
 				</div>
 
 				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					className="animate-fadeInUp"
 					style={{ animationDelay: '0.4s' }}
 				>
-					<div className="flex items-start gap-4 mb-4">
+					<div className="flex items-center gap-4 mb-6">
 						<span className="text-4xl">🧭</span>
 						<h2 className="font-bold text-2xl text-gray-900">Ruimtelijke oriëntatie</h2>
 					</div>
@@ -132,10 +134,10 @@ export const Psychomotoriek = () => {
 				</div>
 
 				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					className="animate-fadeInUp"
 					style={{ animationDelay: '0.5s' }}
 				>
-					<div className="flex items-start gap-4 mb-4">
+					<div className="flex items-center gap-4 mb-6">
 						<span className="text-4xl">🧠</span>
 						<h2 className="font-bold text-2xl text-gray-900">
 							Executieve functies: aandacht & concentratie
@@ -167,10 +169,10 @@ export const Psychomotoriek = () => {
 				</div>
 
 				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					className="animate-fadeInUp"
 					style={{ animationDelay: '0.6s' }}
 				>
-					<div className="flex items-start gap-4 mb-4">
+					<div className="flex items-center gap-4 mb-6">
 						<span className="text-4xl">🔁</span>
 						<h2 className="font-bold text-2xl text-gray-900">
 							Lateralisatie & lichaamsbesef
@@ -201,13 +203,13 @@ export const Psychomotoriek = () => {
 				</div>
 
 				<div
-					className="card text-center bg-pink-600! text-white animate-fadeInUp"
+					className="text-center py-12 px-8 bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl border-l-4 border-pink-600 animate-fadeInUp"
 					style={{ animationDelay: '0.7s' }}
 				>
-					<p className="text-xl font-semibold mb-2">
+					<p className="text-2xl font-semibold text-gray-900 mb-3">
 						Elk kind is anders – dus werk ik steeds individueel en op maat
 					</p>
-					<p className="text-lg">
+					<p className="text-lg text-gray-700">
 						met ruimte voor plezier, succeservaringen en kleine overwinningen. Therapie
 						voelt hier nooit als "moeten", maar als ontdekken wat je wél kan!
 					</p>

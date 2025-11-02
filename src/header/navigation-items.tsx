@@ -6,7 +6,7 @@ interface NavigationItemsProps {
 	shrunk?: boolean
 }
 export const NavigationItems = (props: NavigationItemsProps) => {
-	const defaultColor = props.shrunk ? 'text-secondary' : 'text-white'
+	const defaultColor = 'text-gray-900'
 	const color = props.color ?? defaultColor
 
 	return (

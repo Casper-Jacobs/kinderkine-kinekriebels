@@ -35,29 +35,29 @@ export const Header = (props: HeaderProps) => {
 	return (
 		<div
 			ref={headerRef}
-			className={`bg-gradient-to-r from-pink-500/30 to-purple-500/30 h-1/12 transition-all duration-500 ease-in-out flex flex-col w-screen fixed z-20`}
+			className={`transition-all duration-300 ease-in-out flex flex-col w-full sticky top-0 z-20 border-b border-gray-200 ${
+				shrunk 
+					? 'bg-white/95 backdrop-blur-sm shadow-sm' 
+					: 'bg-white'
+			}`}
 		>
 			<SideNav isOpen={sideNavVisible} onClose={() => setSideNavVisible(false)} />
-			<div className="flex flex-grow flex-row justify-start items-center m-6">
-				<div className="flex flex-row justify-between items-center gap-2 overflow-hidden w-full">
-					<span className="flex flex-row gap-3 items-center">
-						{!breakpoints.isDesktopOrWide && (
-							<span>
-								<HamburgerIcon
-									className={`transition-colors duration-300 ${shrunk ? 'text-pink-600' : 'text-white'}`}
-									onClick={() => setSideNavVisible(true)}
-								/>
-							</span>
-						)}
-
-						<h1
-							className={`text-xl font-bold transition-all duration-300 ${shrunk ? 'text-secondary' : 'text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'}`}
+			<div className="flex flex-row justify-between items-center px-6 md:px-12 py-4 md:py-5">
+				<div className="flex flex-row items-center gap-3">
+					{!breakpoints.isDesktopOrWide && (
+						<button
+							onClick={() => setSideNavVisible(true)}
+							className="p-2 -ml-2 hover:bg-gray-100 rounded-lg transition-colors"
 						>
-							Kinderkine KineKriebels
-						</h1>
-					</span>
+							<HamburgerIcon className="text-gray-900" />
+						</button>
+					)}
+
+					<h1 className="text-xl md:text-2xl font-bold text-gray-900">
+						Kinderkine KineKriebels
+					</h1>
 				</div>
-				{breakpoints.isDesktopOrWide && <NavigationItems shrunk={shrunk} />}
+				{breakpoints.isDesktopOrWide && <NavigationItems />}
 			</div>
 		</div>
 	)

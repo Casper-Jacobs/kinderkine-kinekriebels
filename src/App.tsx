@@ -11,10 +11,10 @@ function App() {
 	const contentRef = useRef<HTMLDivElement | null>(null)
 
 	return (
-		<div className="flex flex-col h-screen w-screen bg-transparent font-lato">
+		<div className="flex flex-col h-screen w-screen bg-white font-lato overflow-y-scroll overflow-x-hidden" ref={contentRef}>
 			<Router>
 				<Header contentRef={contentRef} />
-				<div ref={contentRef} className="flex-grow overflow-x-hidden overflow-y-scroll">
+				<div className="flex-grow">
 					<Routes>
 						<Route path="home" element={<Home />} />
 						<Route path="about" element={<About />} />

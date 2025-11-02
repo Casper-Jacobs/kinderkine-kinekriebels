@@ -1,7 +1,13 @@
 export const Home = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
-			<div className="bg-[url(/src/assets/top-background.png)] bg-no-repeat bg-top bg-fixed h-[25vh] w-screen" />
+			<div className="w-full pt-20">
+				<img 
+					src="/src/assets/top-background.png" 
+					className="w-full h-auto object-cover"
+					alt="Background"
+				/>
+			</div>
 			<div className="h-[50vh]">
 				<img
 					src="/src/assets/kine-kriebels.png"
@@ -9,33 +15,27 @@ export const Home = () => {
 					alt="Logo"
 				/>
 			</div>
-			<div className="flex flex-col gap-6 w-full md:w-2/3 p-4 md:p-8">
-				<div className="card card-accent animate-fadeInUp">
-					<div className="flex items-start gap-4">
+			<div className="flex flex-col gap-16 w-full md:w-2/3 p-4 md:p-8 py-12">
+				<div className="animate-fadeInUp max-w-3xl">
+					<div className="flex items-center gap-4 mb-6">
 						<span className="icon-badge">🏠</span>
-						<div>
-							<h1 className="font-bold text-3xl mb-3 text-gray-900">
-								Welkom bij KineKriebels!
-							</h1>
-							<p className="italic text-lg text-gray-600">
-								Waar bewegen plezier wordt en elk kind mag groeien op zijn eigen
-								tempo.
-							</p>
-						</div>
+						<h1 className="font-bold text-4xl md:text-5xl text-gray-900">
+							Welkom bij KineKriebels!
+						</h1>
 					</div>
+					<p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+						Waar bewegen plezier wordt en elk kind mag groeien op zijn eigen tempo.
+					</p>
 				</div>
 
-				<div className="card animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-					<p className="text-lg leading-relaxed text-gray-700">
+				<div className="animate-fadeInUp space-y-6" style={{ animationDelay: '0.1s' }}>
+					<p className="text-lg md:text-xl leading-relaxed text-gray-700">
 						Bij <span className="font-semibold text-gray-900">KineKriebels</span> draait
 						alles rond kinderen en hun unieke ontwikkeling. Sommige kinderen hebben wat
 						extra ondersteuning nodig in hun motoriek, evenwicht, concentratie of
 						zelfvertrouwen – en daar help ik graag bij.
 					</p>
-				</div>
-
-				<div className="card animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-					<p className="text-lg leading-relaxed text-gray-700">
+					<p className="text-lg md:text-xl leading-relaxed text-gray-700">
 						Als gespecialiseerde kinesitherapeut in{' '}
 						<span className="font-semibold text-gray-900">
 							psychomotoriek bij kinderen
@@ -46,40 +46,47 @@ export const Home = () => {
 					</p>
 				</div>
 
-				<div className="card animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
-					<h2 className="font-bold text-2xl mb-4 text-gray-900">
+				<div className="animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+					<h2 className="font-bold text-3xl mb-8 text-gray-900">
 						Wat mag je verwachten?
 					</h2>
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-						<div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-							<span className="text-2xl">🏡</span>
-							<p className="text-gray-700">Een warme, kindvriendelijke omgeving</p>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<div className="flex items-start gap-4">
+							<span className="text-4xl flex-shrink-0">🏡</span>
+							<div>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">Warme omgeving</h3>
+								<p className="text-gray-600">Een kindvriendelijke ruimte waar iedereen zich welkom voelt</p>
+							</div>
 						</div>
-						<div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-							<span className="text-2xl">🎮</span>
-							<p className="text-gray-700">
-								Therapie in spelvorm, aangepast aan de leeftijd en interesses van je
-								kind
-							</p>
+						<div className="flex items-start gap-4">
+							<span className="text-4xl flex-shrink-0">🎮</span>
+							<div>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">Therapie in spelvorm</h3>
+								<p className="text-gray-600">Aangepast aan de leeftijd en interesses van je kind</p>
+							</div>
 						</div>
-						<div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-							<span className="text-2xl">🌟</span>
-							<p className="text-gray-700">
-								Ruimte voor plezier, succeservaringen en zelfvertrouwen
-							</p>
+						<div className="flex items-start gap-4">
+							<span className="text-4xl flex-shrink-0">🌟</span>
+							<div>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">Succesgerichte aanpak</h3>
+								<p className="text-gray-600">Ruimte voor plezier, succeservaringen en zelfvertrouwen</p>
+							</div>
 						</div>
-						<div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-							<span className="text-2xl">💬</span>
-							<p className="text-gray-700">Open communicatie met ouders</p>
+						<div className="flex items-start gap-4">
+							<span className="text-4xl flex-shrink-0">💬</span>
+							<div>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">Open communicatie</h3>
+								<p className="text-gray-600">Transparante samenwerking met ouders</p>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div
-					className="card bg-gray-50 border-l-4 border-pink-600 animate-fadeInUp"
-					style={{ animationDelay: '0.4s' }}
+					className="animate-fadeInUp border-l-4 border-pink-600 pl-6 py-2"
+					style={{ animationDelay: '0.3s' }}
 				>
-					<p className="text-lg leading-relaxed text-gray-700">
+					<p className="text-lg md:text-xl leading-relaxed text-gray-700">
 						Of het nu gaat om moeilijkheden met fijne motoriek, evenwicht, aandacht of
 						zelfbeeld – bij KineKriebels werken we samen aan{' '}
 						<span className="font-semibold text-gray-900">
@@ -90,13 +97,13 @@ export const Home = () => {
 				</div>
 
 				<div
-					className="card text-center bg-pink-600! text-white animate-fadeInUp"
-					style={{ animationDelay: '0.5s' }}
+					className="animate-fadeInUp text-center py-12 px-8 bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl"
+					style={{ animationDelay: '0.4s' }}
 				>
-					<p className="text-xl font-semibold">
+					<p className="text-2xl font-semibold text-gray-900 mb-3">
 						Benieuwd of ik iets voor jouw kind kan betekenen?
 					</p>
-					<p className="text-lg mt-2">
+					<p className="text-lg text-gray-700">
 						Neem gerust contact op – ik help jullie graag verder!
 					</p>
 				</div>

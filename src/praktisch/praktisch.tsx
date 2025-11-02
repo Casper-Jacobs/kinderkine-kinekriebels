@@ -1,30 +1,32 @@
 export const Praktisch = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
-			<div className="bg-[url(/src/assets/prak-top-bg.png)] bg-no-repeat bg-top bg-fixed h-[25vh] w-screen" />
-			<div className="flex flex-col gap-6 w-full md:w-2/3 p-4 md:p-8">
-				<div className="card card-accent animate-fadeInUp">
-					<div className="flex items-start gap-4">
-						<span className="icon-badge">📋</span>
-						<div>
-							<h1 className="font-bold text-3xl text-gray-900">Praktische info</h1>
-							<p className="italic text-lg text-gray-600 mt-2">
-								Alle belangrijke info op een rijtje.
-							</p>
-						</div>
-					</div>
+			<div className="w-full pt-20">
+				<img 
+					src="/src/assets/prak-top-bg.png" 
+					className="w-full h-auto object-cover"
+					alt="Background"
+				/>
+			</div>
+		<div className="flex flex-col gap-16 w-full md:w-2/3 p-4 md:p-8 py-12">
+			<div className="animate-fadeInUp max-w-3xl">
+				<div className="flex items-center gap-4 mb-6">
+					<span className="icon-badge">📋</span>
+					<h1 className="font-bold text-4xl md:text-5xl text-gray-900">Praktische info</h1>
 				</div>
+				<p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+					Alle belangrijke info op een rijtje.
+				</p>
+			</div>
 
-				<div className="card animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-					<p className="text-lg leading-relaxed text-gray-700">
-						Hieronder vind je alle praktische informatie over de werking van de
-						praktijk. Heb je toch nog vragen? Aarzel niet om contact op te nemen – ik
-						help je graag verder.
-					</p>
-				</div>
-
-				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+			<div className="animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+				<p className="text-lg md:text-xl leading-relaxed text-gray-700">
+					Hieronder vind je alle praktische informatie over de werking van de
+					praktijk. Heb je toch nog vragen? Aarzel niet om contact op te nemen – ik
+					help je graag verder.
+				</p>
+			</div>				<div
+					className="border-l-4 border-pink-600 pl-6 space-y-4 animate-fadeInUp"
 					style={{ animationDelay: '0.2s' }}
 				>
 					<div className="flex items-start gap-4 mb-4">
@@ -42,7 +44,7 @@ export const Praktisch = () => {
 
 				<div className="grid md:grid-cols-2 gap-6">
 					<div
-						className="card bg-gray-50 animate-fadeInUp"
+						className="bg-gray-50 animate-fadeInUp"
 						style={{ animationDelay: '0.3s' }}
 					>
 						<div className="flex items-start gap-3 mb-4">
@@ -57,7 +59,7 @@ export const Praktisch = () => {
 					</div>
 
 					<div
-						className="card bg-gray-50 animate-fadeInUp"
+						className="bg-gray-50 animate-fadeInUp"
 						style={{ animationDelay: '0.4s' }}
 					>
 						<div className="flex items-start gap-3 mb-4">
@@ -80,7 +82,7 @@ export const Praktisch = () => {
 				</div>
 
 				<div
-					className="card border-l-4 border-pink-600 animate-fadeInUp"
+					className="border-l-4 border-pink-600 pl-6 space-y-4 animate-fadeInUp"
 					style={{ animationDelay: '0.5s' }}
 				>
 					<div className="flex items-start gap-4 mb-4">
@@ -103,7 +105,7 @@ export const Praktisch = () => {
 				</div>
 
 				<div
-					className="card bg-gray-50 animate-fadeInUp"
+					className="bg-gray-50 animate-fadeInUp"
 					style={{ animationDelay: '0.6s' }}
 				>
 					<div className="flex items-start gap-4 mb-4">
