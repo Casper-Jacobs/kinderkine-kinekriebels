@@ -1,9 +1,12 @@
+import homeBottom from '../assets/home-bottom.png';
+import topBackground from '../assets/top-background.png';
+
 export const Contact = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
 				<img 
-					src="/src/assets/top-background.png" 
+					src={topBackground} 
 					className="w-full h-auto object-cover"
 					alt="Background"
 				/>
@@ -88,7 +91,7 @@ export const Contact = () => {
 				</div>
 			</div>
 			<div className="h-[30vh] mt-8">
-				<img src="/src/assets/home-bottom.png" className="h-full mx-auto" alt="Logo" />
+				<img src={homeBottom} className="h-full mx-auto" alt="Logo" />
 			</div>
 		</div>
 	)

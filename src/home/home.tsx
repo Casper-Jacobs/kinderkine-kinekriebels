@@ -1,16 +1,20 @@
+import homeBottom from '../assets/home-bottom.png';
+import kineKriebels from '../assets/kine-kriebels.png';
+import topBackground from '../assets/top-background.png';
+
 export const Home = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
 				<img 
-					src="/src/assets/top-background.png" 
+					src={topBackground} 
 					className="w-full h-auto object-cover"
 					alt="Background"
 				/>
 			</div>
 			<div className="h-[50vh]">
 				<img
-					src="/src/assets/kine-kriebels.png"
+					src={kineKriebels}
 					className="h-full mx-auto drop-shadow-2xl"
 					alt="Logo"
 				/>
@@ -109,7 +113,7 @@ export const Home = () => {
 				</div>
 			</div>
 			<div className="h-[30vh] mt-8">
-				<img src="/src/assets/home-bottom.png" className="h-full mx-auto" alt="Logo" />
+				<img src={homeBottom} className="h-full mx-auto" alt="Logo" />
 			</div>
 		</div>
 	)

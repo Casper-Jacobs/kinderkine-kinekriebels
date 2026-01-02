@@ -1,9 +1,13 @@
+import aboutBottom from '../assets/about-bottom.png';
+import mainBgAbout from '../assets/main-bg-about.png';
+import myrthe from '../assets/myrthe.png';
+
 export const About = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
 				<img 
-					src="/src/assets/main-bg-about.png" 
+					src={mainBgAbout} 
 					className="w-full h-auto object-cover"
 					alt="Background"
 				/>
@@ -64,13 +68,13 @@ export const About = () => {
 			</div>
 			<div className="w-full md:w-1/3 md:sticky md:top-24 animate-slideInRight">
 				<img
-					src="/src/assets/myrthe.png"
+					src={myrthe}
 					className="w-full rounded-2xl shadow-lg"
 					alt="Myrthe"
 				/>
 			</div>
 		</div>			<div className="h-[30vh] mt-8">
-				<img src="/src/assets/about-bottom.png" className="h-full mx-auto" alt="Logo" />
+				<img src={aboutBottom} className="h-full mx-auto" alt="Logo" />
 			</div>
 		</div>
 	)

@@ -1,9 +1,12 @@
+import prakBottom from '../assets/prak-bottom.png';
+import prakTopBg from '../assets/prak-top-bg.png';
+
 export const Praktisch = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
 				<img 
-					src="/src/assets/prak-top-bg.png" 
+					src={prakTopBg} 
 					className="w-full h-auto object-cover"
 					alt="Background"
 				/>
@@ -119,7 +122,7 @@ export const Praktisch = () => {
 				</div>
 			</div>
 			<div className="h-[30vh] mt-8">
-				<img src="/src/assets/prak-bottom.png" className="h-full mx-auto" alt="Logo" />
+				<img src={prakBottom} className="h-full mx-auto" alt="Logo" />
 			</div>
 		</div>
 	)

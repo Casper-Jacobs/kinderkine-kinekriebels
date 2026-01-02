@@ -1,9 +1,12 @@
+import psyBottom from '../assets/psy-bottom.png';
+import psyTopBg from '../assets/psy-top-bg.png';
+
 export const Psychomotoriek = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
 				<img 
-					src="/src/assets/psy-top-bg.png" 
+					src={psyTopBg} 
 					className="w-full h-auto object-cover"
 					alt="Background"
 				/>
@@ -216,7 +219,7 @@ export const Psychomotoriek = () => {
 				</div>
 			</div>
 			<div className="h-[30vh] mt-8">
-				<img src="/src/assets/psy-bottom.png" className="h-full mx-auto" alt="Logo" />
+				<img src={psyBottom} className="h-full mx-auto" alt="Logo" />
 			</div>
 		</div>
 	)
