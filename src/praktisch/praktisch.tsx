@@ -55,7 +55,7 @@ export const Praktisch = () => {
 							<h3 className="font-bold text-xl text-gray-900">Locatie</h3>
 						</div>
 						<div className="space-y-2 text-lg text-gray-700">
-							<p className="font-semibold text-gray-900">Kinderkine KineKriebels</p>
+							<p className="font-semibold text-gray-900">KineKriebels</p>
 							<p>Katteweidelaan 84</p>
 							<p>3590 Diepenbeek</p>
 						</div>
@@ -71,14 +71,7 @@ export const Praktisch = () => {
 						</div>
 						<div className="space-y-2 text-lg text-gray-700">
 							<p>
-								<span className="font-semibold text-gray-900">
-									Dinsdag & donderdag:
-								</span>{' '}
-								16u30-19u
-							</p>
-							<p>
-								<span className="font-semibold text-gray-900">Zaterdag:</span>{' '}
-								9u-12u
+								Enkel op afspraak
 							</p>
 						</div>
 					</div>
@@ -102,7 +95,7 @@ export const Praktisch = () => {
 						</li>
 						<li className="flex items-start gap-3">
 							<span className="text-pink-600 mt-1">•</span>
-							<span>Intakegesprek of eerste kennismaking kan iets langer duren</span>
+							<span>Intakegesprek of eerste kennismaking kan meer tijd in beslag nemen</span>
 						</li>
 					</ul>
 				</div>

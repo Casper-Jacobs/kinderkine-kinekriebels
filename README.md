@@ -1,4 +1,4 @@
-# kinderkine-kinekriebels
+# kinekriebels
 
 # React + TypeScript + Vite
 

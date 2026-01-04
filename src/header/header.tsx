@@ -54,7 +54,7 @@ export const Header = (props: HeaderProps) => {
 					)}
 
 					<h1 className="text-xl md:text-2xl font-bold text-gray-900">
-						Kinderkine KineKriebels
+						KineKriebels
 					</h1>
 				</div>
 				{breakpoints.isDesktopOrWide && <NavigationItems />}

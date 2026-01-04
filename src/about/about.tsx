@@ -14,17 +14,14 @@ export const About = () => {
 			</div>
 		<div className="flex flex-col md:flex-row gap-12 justify-between items-start w-full md:w-2/3 p-4 md:p-8 py-12">
 			<div className="flex flex-col gap-12 w-full md:w-2/3 animate-slideInLeft">
-				<div>
+				<div className="space-y-6">
 					<div className="flex items-center gap-4 mb-6">
 						<span className="icon-badge">👩‍⚕️</span>
-						<h1 className="font-bold text-4xl md:text-5xl text-gray-900">Over mij</h1>
+						<p className="text-xl font-semibold text-gray-900">
+							Hallo! Ik ben Myrthe, kinesitherapeut met een hart voor kinderen.
+						</p>
 					</div>
-				</div>
-
-				<div className="space-y-6">
-					<p className="text-xl font-semibold text-gray-900">
-						Hallo! Ik ben Myrthe, kinesitherapeut met een hart voor kinderen.
-					</p>
+						
 					<p className="text-lg leading-relaxed text-gray-700">
 						Elke dag mag ik kinderen ondersteunen in hun groei – fysiek, emotioneel
 						en motorisch. Ik werk als kinesitherapeut in het{' '}

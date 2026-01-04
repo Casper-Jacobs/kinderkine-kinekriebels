@@ -66,7 +66,7 @@ export const Contact = () => {
 							<div>
 								<p className="font-bold text-gray-900">E-mail</p>
 								<p className="text-sm text-gray-700">
-									myrthe.kinekriebels@gmail.com
+									info@kinekriebels.be
 								</p>
 							</div>
 						</div>
