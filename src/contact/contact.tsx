@@ -1,15 +1,11 @@
-import homeBottom from '../assets/home-bottom.png';
-import topBackground from '../assets/top-background.png';
+import homeBottom from '../assets/home-bottom.png'
+import topBackground from '../assets/top-background.png'
 
 export const Contact = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
-				<img 
-					src={topBackground} 
-					className="w-full h-auto object-cover"
-					alt="Background"
-				/>
+				<img src={topBackground} className="w-full h-auto object-cover" alt="Background" />
 			</div>
 			<div className="flex flex-col gap-6 w-full md:w-2/3 p-4 md:p-8">
 				<div className="card-accent animate-fadeInUp">
@@ -24,7 +20,6 @@ export const Contact = () => {
 						</div>
 					</div>
 				</div>
-
 				<div className="animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
 					<p className="text-lg leading-relaxed text-gray-700 mb-3">
 						Ben je op zoek naar ondersteuning voor je kind of heb je vragen over de
@@ -37,23 +32,23 @@ export const Contact = () => {
 						Ik neem zo snel mogelijk contact met je op om verder af te spreken.
 					</p>
 				</div>
-
-			<div
-				className="text-center py-12 px-8 bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl animate-fadeInUp"
-				style={{ animationDelay: '0.2s' }}
-			>
-				<button
-					className="bg-pink-600 text-white font-bold text-lg py-4 px-8 rounded-full cursor-pointer hover:bg-pink-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
-					onClick={() => {
-						window.open(
-							'https://docs.google.com/forms/d/e/1FAIpQLSdaM1rW6rMda9j4tG3F1rBoFtBJRcXRqHWUXiKotCKsNW0CNA/viewform',
-							'_blank'
-						)
-					}}
+				<div
+					className="text-center py-12 px-8 bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl animate-fadeInUp"
+					style={{ animationDelay: '0.2s' }}
 				>
-					Maak een afspraak
-				</button>
-			</div>				<div
+					<button
+						className="bg-pink-600 text-white font-bold text-lg py-4 px-8 rounded-full cursor-pointer hover:bg-pink-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
+						onClick={() => {
+							window.open(
+								'https://docs.google.com/forms/d/e/1FAIpQLSdaM1rW6rMda9j4tG3F1rBoFtBJRcXRqHWUXiKotCKsNW0CNA/viewform',
+								'_blank'
+							)
+						}}
+					>
+						Maak een afspraak
+					</button>
+				</div>{' '}
+				<div
 					className="border-l-4 border-pink-600 pl-6 space-y-4 animate-fadeInUp"
 					style={{ animationDelay: '0.3s' }}
 				>
@@ -65,9 +60,7 @@ export const Contact = () => {
 							<span className="text-4xl">📧</span>
 							<div>
 								<p className="font-bold text-gray-900">E-mail</p>
-								<p className="text-sm text-gray-700">
-									info@kinekriebels.be
-								</p>
+								<p className="text-sm text-gray-700">info@kinekriebels.be</p>
 							</div>
 						</div>
 						<div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
@@ -79,7 +72,6 @@ export const Contact = () => {
 						</div>
 					</div>
 				</div>
-
 				<div
 					className="text-center bg-gray-50 animate-fadeInUp"
 					style={{ animationDelay: '0.4s' }}

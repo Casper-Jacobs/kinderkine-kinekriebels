@@ -36,9 +36,7 @@ export const Header = (props: HeaderProps) => {
 		<div
 			ref={headerRef}
 			className={`transition-all duration-300 ease-in-out flex flex-col w-full sticky top-0 z-20 border-b border-gray-200 ${
-				shrunk 
-					? 'bg-white/95 backdrop-blur-sm shadow-sm' 
-					: 'bg-white'
+				shrunk ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-white'
 			}`}
 		>
 			<SideNav isOpen={sideNavVisible} onClose={() => setSideNavVisible(false)} />
@@ -53,9 +51,7 @@ export const Header = (props: HeaderProps) => {
 						</button>
 					)}
 
-					<h1 className="text-xl md:text-2xl font-bold text-gray-900">
-						KineKriebels
-					</h1>
+					<h1 className="text-xl md:text-2xl font-bold text-gray-900">KineKriebels</h1>
 				</div>
 				{breakpoints.isDesktopOrWide && <NavigationItems />}
 			</div>

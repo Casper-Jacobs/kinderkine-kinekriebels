@@ -1,23 +1,15 @@
-import homeBottom from '../assets/home-bottom.png';
-import kineKriebels from '../assets/kine-kriebels.png';
-import topBackground from '../assets/top-background.png';
+import homeBottom from '../assets/home-bottom.png'
+import kineKriebels from '../assets/kine-kriebels.png'
+import topBackground from '../assets/top-background.png'
 
 export const Home = () => {
 	return (
 		<div className="flex flex-col bg-white items-center justify-center">
 			<div className="w-full pt-20">
-				<img 
-					src={topBackground} 
-					className="w-full h-auto object-cover"
-					alt="Background"
-				/>
+				<img src={topBackground} className="w-full h-auto object-cover" alt="Background" />
 			</div>
 			<div className="h-[50vh]">
-				<img
-					src={kineKriebels}
-					className="h-full mx-auto drop-shadow-2xl"
-					alt="Logo"
-				/>
+				<img src={kineKriebels} className="h-full mx-auto drop-shadow-2xl" alt="Logo" />
 			</div>
 			<div className="flex flex-col gap-16 w-full md:w-2/3 p-4 md:p-8 py-12">
 				<div className="animate-fadeInUp max-w-3xl">
@@ -58,29 +50,45 @@ export const Home = () => {
 						<div className="flex items-start gap-4">
 							<span className="text-4xl flex-shrink-0">🏡</span>
 							<div>
-								<h3 className="font-semibold text-lg text-gray-900 mb-1">Warme omgeving</h3>
-								<p className="text-gray-600">Een kindvriendelijke ruimte waar iedereen zich welkom voelt</p>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">
+									Warme omgeving
+								</h3>
+								<p className="text-gray-600">
+									Een kindvriendelijke ruimte waar iedereen zich welkom voelt
+								</p>
 							</div>
 						</div>
 						<div className="flex items-start gap-4">
 							<span className="text-4xl flex-shrink-0">🎮</span>
 							<div>
-								<h3 className="font-semibold text-lg text-gray-900 mb-1">Therapie in spelvorm</h3>
-								<p className="text-gray-600">Aangepast aan de leeftijd en interesses van je kind</p>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">
+									Therapie in spelvorm
+								</h3>
+								<p className="text-gray-600">
+									Aangepast aan de leeftijd en interesses van je kind
+								</p>
 							</div>
 						</div>
 						<div className="flex items-start gap-4">
 							<span className="text-4xl flex-shrink-0">🌟</span>
 							<div>
-								<h3 className="font-semibold text-lg text-gray-900 mb-1">Succesgerichte aanpak</h3>
-								<p className="text-gray-600">Ruimte voor plezier, succeservaringen en zelfvertrouwen</p>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">
+									Succesgerichte aanpak
+								</h3>
+								<p className="text-gray-600">
+									Ruimte voor plezier, succeservaringen en zelfvertrouwen
+								</p>
 							</div>
 						</div>
 						<div className="flex items-start gap-4">
 							<span className="text-4xl flex-shrink-0">💬</span>
 							<div>
-								<h3 className="font-semibold text-lg text-gray-900 mb-1">Open communicatie</h3>
-								<p className="text-gray-600">Transparante samenwerking met ouders</p>
+								<h3 className="font-semibold text-lg text-gray-900 mb-1">
+									Open communicatie
+								</h3>
+								<p className="text-gray-600">
+									Transparante samenwerking met ouders
+								</p>
 							</div>
 						</div>
 					</div>
