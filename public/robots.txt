@@ -1,0 +1,6 @@
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location (update when you create a sitemap)
+Sitemap: https://kinekriebels.be/sitemap.xml

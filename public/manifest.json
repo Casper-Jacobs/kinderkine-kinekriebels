@@ -1,7 +1,20 @@
 {
     "short_name": "KineKriebels",
     "name": "KineKriebels",
-    "icons": [],
+    "icons": [
+        {
+            "src": "/logo-icon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/logo-icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
