@@ -6,6 +6,8 @@ import topBackground from '../assets/top-background.png'
 export const Home = () => {
 	const navigate = useNavigate()
 
+	document.title = 'KineKriebels – Kinderkinesitherapie'
+
 	return (
 		<div className="flex flex-col items-center">
 			{/* Hero Section */}
@@ -167,7 +169,7 @@ export const Home = () => {
 			</div>
 
 			{/* Bottom illustration */}
-			<div className="py-8">
+			<div className="py-8 section-warm w-full flex justify-center">
 				<img
 					src={homeBottom}
 					className="h-[25vh] mx-auto"

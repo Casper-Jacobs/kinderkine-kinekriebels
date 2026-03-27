@@ -3,6 +3,7 @@ import mainBgAbout from '../assets/main-bg-about.png'
 import myrthe from '../assets/myrthe.png'
 
 export const About = () => {
+	document.title = 'Wie ben ik – KineKriebels'
 	return (
 		<div className="flex flex-col items-center">
 			{/* Hero */}

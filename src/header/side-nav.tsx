@@ -10,12 +10,13 @@ export const SideNav = (props: SideNavProps) => {
 	return (
 		<>
 			{/* Backdrop */}
-			{props.isOpen && (
-				<div
-					className="fixed inset-0 bg-black/40 backdrop-blur-sm z-20 transition-opacity duration-300"
-					onClick={props.onClose}
-				/>
-			)}
+			<div
+				className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-20 transition-opacity duration-300 ${
+					props.isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+				}`}
+				onClick={props.onClose}
+				aria-hidden={!props.isOpen}
+			/>
 
 			{/* Side Navigation */}
 			<div

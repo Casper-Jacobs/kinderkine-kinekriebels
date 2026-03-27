@@ -2,6 +2,7 @@ import prakBottom from '../assets/prak-bottom.png'
 import prakTopBg from '../assets/prak-top-bg.png'
 
 export const Praktisch = () => {
+	document.title = 'Praktische info – KineKriebels'
 	return (
 		<div className="flex flex-col items-center">
 			{/* Hero */}

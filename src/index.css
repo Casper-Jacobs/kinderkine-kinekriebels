@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -52,27 +51,6 @@ body {
   }
 }
 
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 @keyframes scaleIn {
   from {
@@ -85,58 +63,23 @@ body {
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
 
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.animate-slideInLeft {
-  animation: slideInLeft 0.6s ease-out forwards;
-}
-
-.animate-slideInRight {
-  animation: slideInRight 0.6s ease-out forwards;
-}
 
 .animate-scaleIn {
   animation: scaleIn 0.5s ease-out forwards;
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
 
 /* Section backgrounds with soft shapes */
 .section-warm {
   background: linear-gradient(135deg, #FFFBF7 0%, #FFF5F7 50%, #FFF0EC 100%);
 }
 
-.section-blush {
-  background: linear-gradient(180deg, #FFF8F6 0%, #FFE8ED 100%);
-}
 
-.section-white {
-  background: #FFFFFF;
-}
-
-/* Decorative blob shape */
-.blob-decoration::before {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(233, 30, 99, 0.06) 0%, transparent 70%);
-  pointer-events: none;
-}
 
 /* Cards with depth */
 .card {
@@ -153,12 +96,6 @@ body {
   box-shadow: 0 12px 32px rgba(233, 30, 99, 0.1), 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.card-accent {
-  background: linear-gradient(135deg, #FFF5F7 0%, #FFFFFF 100%);
-  border-left: 4px solid #E91E63;
-  border-radius: 0 16px 16px 0;
-  padding: 1.5rem 2rem;
-}
 
 /* Gradient text */
 .gradient-text {
@@ -343,7 +280,7 @@ body {
 
 /* Section spacing utility */
 .page-section {
-  padding: 4rem 1rem;
+  padding: 4rem 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -352,25 +289,4 @@ body {
   }
 }
 
-/* Modal styles */
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    z-index: 999;
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    place-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-default {
-    position: relative;
-    z-index: 999;
-    min-width: 40%;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15);
-}

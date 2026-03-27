@@ -2,6 +2,7 @@ import homeBottom from '../assets/home-bottom.png'
 import topBackground from '../assets/top-background.png'
 
 export const Contact = () => {
+	document.title = 'Contact – KineKriebels'
 	return (
 		<div className="flex flex-col items-center">
 			{/* Hero */}
@@ -55,15 +56,11 @@ export const Contact = () => {
 						<p className="font-display text-2xl font-semibold text-gray-900 mb-6">
 							Maak een afspraak
 						</p>
-						<button
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSdaM1rW6rMda9j4tG3F1rBoFtBJRcXRqHWUXiKotCKsNW0CNA/viewform"
+							target="_blank"
+							rel="noopener noreferrer"
 							className="btn-primary"
-							onClick={() => {
-								window.open(
-									'https://docs.google.com/forms/d/e/1FAIpQLSdaM1rW6rMda9j4tG3F1rBoFtBJRcXRqHWUXiKotCKsNW0CNA/viewform',
-									'_blank',
-									'noopener,noreferrer'
-								)
-							}}
 						>
 							Vul het formulier in
 							<svg
@@ -79,7 +76,7 @@ export const Contact = () => {
 									d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
 								/>
 							</svg>
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -132,7 +129,7 @@ export const Contact = () => {
 			</div>
 
 			{/* Bottom illustration */}
-			<div className="py-8 bg-white w-full flex justify-center">
+			<div className="py-8 section-warm w-full flex justify-center">
 				<img
 					src={homeBottom}
 					className="h-[25vh] mx-auto"

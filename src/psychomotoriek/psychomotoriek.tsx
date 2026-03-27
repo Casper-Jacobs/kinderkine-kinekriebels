@@ -31,6 +31,7 @@ const TherapyDomain = ({ emoji, title, symptoms, description, delay }: TherapyDo
 )
 
 export const Psychomotoriek = () => {
+	document.title = 'Psychomotoriek – KineKriebels'
 	const domains: Omit<TherapyDomainProps, 'delay'>[] = [
 		{
 			emoji: '✍️',
@@ -188,7 +189,7 @@ export const Psychomotoriek = () => {
 			</div>
 
 			{/* Bottom illustration */}
-			<div className="py-8">
+			<div className="py-8 section-warm w-full flex justify-center">
 				<img
 					src={psyBottom}
 					className="h-[25vh] mx-auto"

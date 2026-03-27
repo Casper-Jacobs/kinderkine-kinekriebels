@@ -34,12 +34,13 @@ export const Footer = () => {
 						<ul className="space-y-2.5">
 							{navLinks.map((item) => (
 								<li key={item.link}>
-									<a
+									<button
+										type="button"
 										onClick={() => navigate(item.link)}
 										className="text-sm text-gray-400 hover:text-pink-400 cursor-pointer transition-colors duration-200"
 									>
 										{item.text}
-									</a>
+									</button>
 								</li>
 							))}
 						</ul>

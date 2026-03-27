@@ -14,7 +14,8 @@ export const HeaderItem = (props: HeaderItemProps) => {
 	const highlighted = props.link && location.pathname.includes(props.link)
 
 	return (
-		<a
+		<button
+			type="button"
 			onClick={() => {
 				if (props.onClick) props.onClick()
 				else if (props.link) navigate(props.link)
@@ -23,7 +24,7 @@ export const HeaderItem = (props: HeaderItemProps) => {
 			className={`
 				relative text-nowrap text-[15px] font-semibold tracking-wide
 				${props.color ?? 'text-gray-700'} 
-				hover:cursor-pointer
+				cursor-pointer bg-transparent border-none
 				transition-all duration-300 ease-in-out
 				hover:text-pink-600
 				pb-1
@@ -32,6 +33,6 @@ export const HeaderItem = (props: HeaderItemProps) => {
 			`}
 		>
 			{props.text}
-		</a>
+		</button>
 	)
 }
