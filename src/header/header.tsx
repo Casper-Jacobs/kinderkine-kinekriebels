@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useBreakpoints } from '../utils/breakpoints'
 import HamburgerIcon from './hamburger-icon'
 import { NavigationItems } from './navigation-items'
@@ -8,53 +9,65 @@ interface HeaderProps {
 	contentRef: React.RefObject<HTMLDivElement | null>
 }
 
-export const Header = (props: HeaderProps) => {
+export const Header = (_props: HeaderProps) => {
 	const breakpoints = useBreakpoints()
 	const [shrunk, setShrunk] = useState(false)
 	const [sideNavVisible, setSideNavVisible] = useState<boolean>(false)
+	const navigate = useNavigate()
 
 	const headerRef = useRef<HTMLDivElement | null>(null)
 
 	useEffect(() => {
-		const contentElement = props.contentRef.current
 		const handleScroll = () => {
-			if (contentElement) {
-				if (contentElement.scrollTop > 10) {
-					setShrunk(true)
-				} else {
-					setShrunk(false)
-				}
+			if (window.scrollY > 10) {
+				setShrunk(true)
+			} else {
+				setShrunk(false)
 			}
 		}
-		if (contentElement) contentElement.addEventListener('scroll', handleScroll)
-		return () => {
-			if (contentElement) contentElement.removeEventListener('scroll', handleScroll)
-		}
-	}, [props.contentRef])
+		window.addEventListener('scroll', handleScroll)
+		return () => window.removeEventListener('scroll', handleScroll)
+	}, [])
 
 	return (
-		<div
-			ref={headerRef}
-			className={`transition-all duration-300 ease-in-out flex flex-col w-full sticky top-0 z-20 border-b border-gray-200 ${
-				shrunk ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-white'
-			}`}
-		>
+		<>
 			<SideNav isOpen={sideNavVisible} onClose={() => setSideNavVisible(false)} />
-			<div className="flex flex-row justify-between items-center px-6 md:px-12 py-4 md:py-5">
-				<div className="flex flex-row items-center gap-3">
+			<header
+				ref={headerRef}
+				className={`transition-all duration-300 ease-in-out flex flex-col w-full fixed top-0 z-20 ${
+					shrunk
+						? 'bg-white/90 backdrop-blur-md shadow-lg shadow-black/[0.04]'
+						: 'bg-white/70 backdrop-blur-sm'
+				}`}
+			>
+			<div
+				className={`flex flex-row justify-between items-center px-6 md:px-12 transition-all duration-300 ${
+					shrunk ? 'py-3' : 'py-4 md:py-5'
+				}`}
+			>
+				<button
+					onClick={() => navigate('/home')}
+					className="flex flex-row items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer"
+				>
 					{!breakpoints.isDesktopOrWide && (
 						<button
-							onClick={() => setSideNavVisible(true)}
-							className="p-2 -ml-2 hover:bg-gray-100 rounded-lg transition-colors"
+							onClick={(e) => {
+								e.stopPropagation()
+								setSideNavVisible(true)
+							}}
+							className="p-2 -ml-2 hover:bg-pink-50 rounded-xl transition-colors"
 						>
 							<HamburgerIcon className="text-gray-900" />
 						</button>
 					)}
 
-					<h1 className="text-xl md:text-2xl font-bold text-gray-900">KineKriebels</h1>
-				</div>
-				{breakpoints.isDesktopOrWide && <NavigationItems />}
+					<span className="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">
+						Kine<span className="gradient-text">Kriebels</span>
+					</span>
+				</button>
+			{breakpoints.isDesktopOrWide && <NavigationItems />}
 			</div>
-		</div>
+		</header>
+		</>
 	)
 }
